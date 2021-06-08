@@ -33,6 +33,7 @@ template User with
       controller sender
       do
         assertMsg "Designated user must follow you back to send a message" (elem sender following)
+        -- (elem sender following) ensures it is impossible to send message to someone not following the sender
         create Message with sender, receiver = username, content
     -- SENDMESSAGE_END
 

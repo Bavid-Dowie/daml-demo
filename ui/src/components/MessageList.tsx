@@ -16,7 +16,7 @@ const MessageList: React.FC = () => {
           <ListItem
             className='test-select-message-item'
             key={message.contractId}>
-              <strong>{sender} &arr; {receiver}:</strong> {content}
+              <strong>{sender} &rarr; {receiver}:</strong> {content}
           </ListItem>
         )
       })}
