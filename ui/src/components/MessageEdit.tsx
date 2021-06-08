@@ -9,7 +9,6 @@ type Props = {
 }
 
 // Component for editting message to send to a follower
-
 const MessageEdit: React.FC<Props> = ({followers}) => {
   const sender = useParty()
   const [receiver, setReceiver] = useState<string | undefined>()
